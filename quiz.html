@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> My Personal Profile! </title>
+    <link rel = "stylesheet" type = "text/css" href ="cssforpp.css">
+  </head>
+  <body>
+    <div class = "nav">
+      <a class = "home" href = "personalprofile.html"> Home </a>
+      <a class = "hobbies" href = "hobbies.html"> Hobbies </a>
+      <a class = "quiz" href = "quiz.html"> Quiz About Me! </a>
+   </div>
+   <br>
+   <br>
+   <form> How well do you know me?
+     <ol>
+       <br>
+       <br>
+       <li>
+         <label> When is my birthday? </label>
+         <br>
+         <input type = "date"> </input>
+       </li>
+         <div id = "answer0"> Right or Wrong: </div>
+    <br>
+    <br>
+    <li>
+      <label> What is my favorite food? </label>
+      <br>
+      <input type = "radio" name = "food" id = "boba"> Boba </input>
+      <br>
+      <input type = "radio" name = "food" id = "pizza"> Pizza </input>
+      <br>
+      <input type = "radio" name = "food" id = "icecream"> Ice Cream </input>
+      <br>
+      <input type = "radio" name = "food" id = "chocolate"> Chocolate </input>
+      <br>
+    </li>
+    <div id = "answer1"> Right or Wrong: </div>
+    <br>
+    <br>
+    <li>
+        <label> What is the name of my sister(s)? </label>
+        <br>
+        <input type = "checkbox" name = "sibling"> Anoushka </input>
+        <br>
+        <input type = "checkbox" name = "sibling"> Suhana </input>
+        <br>
+        <input type = "checkbox" name = "sibling"> Anubhava </input>
+        <br>
+        <input type = "checkbox" name = "sibling"> Anushka </input>
+        <br>
+    </li>
+      <div id = "answer2"> Right or Wrong: </div>
+    <br>
+    <br>
+    <li>
+      <label> How old am I? </label>
+      <br>
+      <input type = "number" id = "age"> </input>
+      <br>
+    </li>
+      <div id = "answer3"> Right or Wrong: </div>
+    <br>
+    <br>
+    <li>
+      <label> Type in a secret password here! </label>
+      <br>
+      <input type = "password"> </input>
+      <br>
+    </li>
+      <div id = "answer4"> Right or Wrong: </div>
+      <br>
+    <br>
+    <button type = "button" onclick = "rightorwrong()"> Submit! </button>
+   </ol>
+   </form>
+   <script>
+   var answer1 = document.getElementById("answer1");
+   var food = document.getElementById("pizza");
+   var age = document.getElementById("age");
+   var answer3 = document.getElementById("answer3");
+   function rightorwrong(){
+     if (food.checked) {
+       answer1.innerHTML="You got my favorite food RIGHT!";
+     }
+     else {
+         answer1.innerHTML="You got my favorite food WRONG!";
+      }
+
+    if (age.value == 14) {
+      answer3.innerHTML = "You got my age RIGHT!"
+    }
+    else {
+      answer3.innerHTML = "You got my age WRONG!"
+    }
+   }
+
+
+   </script>
+
+
+  </body>
+</html>

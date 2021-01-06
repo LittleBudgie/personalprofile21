@@ -1,0 +1,41 @@
+body{
+    background-color: #b3ffff;
+}
+
+h1 {
+    padding-left: 190px;
+    font-family: Georgia;
+    font-size: 50px;
+    color: #0000ff;
+}
+
+h2 {
+    padding-left: 190px;
+    font-family: Georgia;
+    font-size: 35px;
+    color: #0000ff;
+}
+
+p1 {
+
+    padding-left: 190px;
+    font-family: Monospace;
+    font-size: 20px;
+    color: #0000ff;
+}
+
+img {
+  padding-left: 190px;
+  height: 250px;
+  width: auto;
+}
+
+a {
+    padding-left: 190px;
+    color: #0000ff;
+}
+
+ul {
+    padding-left: 190px;
+    color: #0000ff;
+}

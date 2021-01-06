@@ -1,0 +1,54 @@
+
+
+body {
+ background-image: url("background.jpg");
+ background-repeat: no-repeat;
+ background-size: cover;
+ font-family: cursive;
+}
+
+form {
+  background-image: url("https://wallpapertag.com/wallpaper/middle/3/9/7/813526-new-background-simple-tumblr-2560x1600-for-mobile.jpg");
+  padding: 50px;
+  margin: 50px;
+  color: white;
+}
+
+img {
+  padding-left: 540px;
+}
+
+/*
+#paraone {
+  padding-top: 10px;
+}
+
+#paratwo {
+  padding-top: 50px;
+}
+
+#parathree {
+  padding-top: 70px;
+}
+
+#parafour {
+  padding-top: 100px;
+}
+
+*/
+
+.nav {
+  font-size: 24pt;
+}
+
+
+.active {
+  background-color: #00ccff;
+}
+
+.home, .hobbies, .quiz{
+  padding: 25px;
+  background-color: #9999e6;
+  color: #ffffff;
+  border-right: 10px solid #ffff66;
+}
