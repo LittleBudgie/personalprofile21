@@ -42,13 +42,13 @@
     <li>
         <label> What is the name of my sister(s)? </label>
         <br>
-        <input type = "checkbox" name = "sibling"> Anoushka </input>
+        <input type = "checkbox" name = "sibling" id = "anoushka"> Anoushka </input>
         <br>
-        <input type = "checkbox" name = "sibling"> Suhana </input>
+        <input type = "checkbox" name = "sibling" id = "suhana"> Suhana </input>
         <br>
-        <input type = "checkbox" name = "sibling"> Anubhava </input>
+        <input type = "checkbox" name = "sibling" id = "anubhava"> Anubhava </input>
         <br>
-        <input type = "checkbox" name = "sibling"> Anushka </input>
+        <input type = "checkbox" name = "sibling" id = "anushka"> Anushka </input>
         <br>
     </li>
       <div id = "answer2"> Right or Wrong: </div>
@@ -80,7 +80,9 @@
    <script>
    var answer0 = document.getElementById("answer0");
    var answer1 = document.getElementById("answer1");
+   var answer2 = document.getElementById("answer2");
    var answer4 = document.getElementById("answer4");
+   var sibling = document.getElementById("anoushka");
    var food = document.getElementById("pizza");
    var age = document.getElementById("age");
    var answer3 = document.getElementById("answer3");
@@ -112,6 +114,13 @@
     else {
       answer4.innerHTML = "You got the date today WRONG!";
     }
+     
+    if sibling.checked {
+      answer2.innerHTML = "You got my sister's name RIGHT!";
+    }
+     else {
+       answer2.innerHTML = "You got my sister's name WRONG!";
+     }
    }
 
 
