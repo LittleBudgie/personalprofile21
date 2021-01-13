@@ -19,7 +19,7 @@
        <li>
          <label> When is my birthday? </label>
          <br>
-         <input type = "date"> </input>
+         <input type = "date" id = "birthday"> </input>
        </li>
          <div id = "answer0"> Right or Wrong: </div>
     <br>
@@ -76,6 +76,7 @@
    </ol>
    </form>
    <script>
+   var answer0 = document.getElementById("answer0");
    var answer1 = document.getElementById("answer1");
    var food = document.getElementById("pizza");
    var age = document.getElementById("age");
@@ -87,7 +88,12 @@
      else {
          answer1.innerHTML="You got my favorite food WRONG!";
       }
-
+   if (birthday.value == 04052006) {
+      answer0.innerHTML="You got my birthday RIGHT!";
+    }
+    else {
+      answer0.innerHTML="You got my birthday WRONG!";
+    }
     if (age.value == 14) {
       answer3.innerHTML = "You got my age RIGHT!"
     }
