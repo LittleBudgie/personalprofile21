@@ -19,7 +19,7 @@
        <li>
          <label> When is my birthday? </label>
          <br>
-         <input id = "birthday" type = "date"> </input>
+         <input type = "date"> </input>
        </li>
          <div id = "answer0"> Right or Wrong: </div>
     <br>
@@ -64,29 +64,22 @@
     <br>
     <br>
     <li>
-      <label> What is the date? Hint: It's January ___ of 2021! </label>
+      <label> Type in a secret password here! </label>
       <br>
-      <label> This will type your answer as a password so no one can see it! </label>
-      <br>
-      <input id = "date" type = "password"> </input>
+      <input type = "password"> </input>
       <br>
     </li>
       <div id = "answer4"> Right or Wrong: </div>
       <br>
     <br>
-    <button type = "button" onclick = rightorwrong()> Submit! </button>
+    <button type = "button" onclick = "rightorwrong()"> Submit! </button>
    </ol>
    </form>
    <script>
-   var answer0 = document.getElementById("answer0")
    var answer1 = document.getElementById("answer1");
-   var answer3 = document.getElementById("answer3");
-   var answer4 = document.getElementById("answer4")
    var food = document.getElementById("pizza");
    var age = document.getElementById("age");
-   var birthday = document.getElementById("birthday")
-   var date = document.getElementById("date")
-   var todaydate = getDate()
+   var answer3 = document.getElementById("answer3");
    function rightorwrong(){
      if (food.checked) {
        answer1.innerHTML="You got my favorite food RIGHT!";
@@ -95,24 +88,15 @@
          answer1.innerHTML="You got my favorite food WRONG!";
       }
 
-    if (birthday.value == 04052006) {
-      answer0.innerHTML="You got my birthday RIGHT!"
-    }
-
-    else {
-      answer0.innerHTML="You got my birthday WRONG!"
-    }
-
     if (age.value == 14) {
-      answer3.innerHTML = "You got my age RIGHT!";
+      answer3.innerHTML = "You got my age RIGHT!"
     }
     else {
-      answer3.innerHTML = "You got my age WRONG!";
+      answer3.innerHTML = "You got my age WRONG!"
     }
-
-   if (date.value == todaydate.value) {
-     answer4.innerHTML = "You got the date today right!";
    }
+
+
    </script>
 
 
