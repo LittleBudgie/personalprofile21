@@ -85,7 +85,6 @@
    var age = document.getElementById("age");
    var answer3 = document.getElementById("answer3");
    var date = document.getElementById("date");
-   var todaydate = getDate();
    function rightorwrong(){
      if (food.checked) {
        answer1.innerHTML="You got my favorite food RIGHT!";
@@ -106,7 +105,7 @@
       answer3.innerHTML = "You got my age WRONG!"
     }
      
-    if (date.value == todaydate.value) {
+    if (date.value == 13) {
      answer4.innerHTML = "You got the date today RIGHT!";
    }
     else {
