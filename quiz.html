@@ -87,7 +87,7 @@
    var age = document.getElementById("age");
    var answer3 = document.getElementById("answer3");
    var date = document.getElementById("date");
-   var todaydate = getDate();
+   var todaydate = newDate();
    function rightorwrong(){
      if (food.checked) {
        answer1.innerHTML="You got my favorite food RIGHT!";
@@ -95,7 +95,7 @@
      else {
          answer1.innerHTML="You got my favorite food WRONG!";
       }
-   if (birthday.value == 04/05/2006) {
+   if (birthday.value == (04, 05, 2006)) {
       answer0.innerHTML="You got my birthday RIGHT!";
     }
     else {
@@ -108,7 +108,7 @@
       answer3.innerHTML = "You got my age WRONG!"
     }
      
-    if (date.value == todaydate.value) {
+    if (date.setHours(0, 0, 0, 0) == todaydate.setHours(0, 0, 0, 0)) {
      answer4.innerHTML = "You got the date today RIGHT!";
    }
     else {
